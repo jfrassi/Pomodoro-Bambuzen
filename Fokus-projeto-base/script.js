@@ -77,15 +77,14 @@ function alterarContexto (contexto) {
 }
 
 const contagemRegressiva = () => {
-    iniciarOuPausar()
     if (tempoDecorridoEmSegundos <= 0) {
-        zerar()
+        audioBeep.play()
         alert('Tempo Finalizado')
+        zerar()
         return
     }
     tempoDecorridoEmSegundos -= 1
     console.log('temporizador: ' + tempoDecorridoEmSegundos)
-
 }
 
 
@@ -93,13 +92,16 @@ startPauseBtn.addEventListener ('click', iniciarOuPausar)
 
 function iniciarOuPausar () {
     if(intervaloId) {
+        audioPause.play()
         zerar ()
         return
     }
+    audioPlay.play()
     intervaloId = setInterval(contagemRegressiva, 1000)
 }
 
 function zerar () {
-    clearInterval(intervaloId)
-    intervaloId = null
+    clearInterval(intervaloId);
+    intervaloId = null;
+    contagemRegressiva();
 }
