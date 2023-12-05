@@ -1,8 +1,8 @@
 const mensagem = "mensagem 1"
 const html = document.querySelector('html')
-const focoBtn = document.querySelector('.app__card-button--foco')
-const curtoBtn = document.querySelector('.app__card-button--curto')
-const longoBtn = document.querySelector('.app__card-button--longo')
+const focoBtn = document.querySelector('.app__card-button--lenha')
+const curtoBtn = document.querySelector('.app__card-button--floresta')
+const longoBtn = document.querySelector('.app__card-button--chuva')
 const banner = document.querySelector('.app__image')
 const titulo = document.querySelector('.app__title')
 const botoes = document.querySelectorAll('.app__card-button')
@@ -33,19 +33,19 @@ musicaFocoInput.addEventListener('change', () => {
 
 focoBtn.addEventListener('click', () => {
     tempoDecorridoEmSegundos = 1500
-    alterarContexto('foco')
+    alterarContexto('lenha')
     focoBtn.classList.add('active')
 })
 
 curtoBtn.addEventListener('click', () => {
     tempoDecorridoEmSegundos = 300
-    alterarContexto('descanso-curto')
+    alterarContexto('floresta')
     curtoBtn.classList.add('active')
 })
 
 longoBtn.addEventListener('click', () => {
     tempoDecorridoEmSegundos = 900
-    alterarContexto('descanso-longo')
+    alterarContexto('chuva')
     longoBtn.classList.add('active')
 })
 
