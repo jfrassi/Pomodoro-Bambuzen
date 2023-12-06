@@ -5,8 +5,8 @@
     
 
    
-   
-
+    --fundo-button-active:#e64e0e;
+    --borda-card: #e64e0e;
     --color-primary: #123456;
     --color-secondary: #FFF;
     --azul-royal: #144480;
@@ -19,17 +19,23 @@
     --main-bg-color: linear-gradient(180deg, #e64e0e 0%, rgb(78, 30, 8) 48.44%, #01080E 100%);
     --fundo-card-timer: rgba(128, 72, 20, 0.3);
     --linear-botes: linear-gradient(180deg, #ffa672 0%, #41261a 100%);
+    --borda-card: #e64e0e;
+    --fundo-button-active:#e64e0e;
     
 }
 
 [data-contexto="floresta"] {
     --main-bg-color: linear-gradient(180deg, #0F725C 0%, #08352b 48.44%, #01080E 100%);
     --fundo-card-timer: rgba(20, 128, 61, 0.3);
+    --borda-card: #0F725C;
+    --fundo-button-active:#0F725C;
 }
 
 [data-contexto="chuva"] {
     --main-bg-color: linear-gradient(180deg, #1875E9 0%, #041832 48.44%, #01080E 100%);
     --fundo-card-timer: rgba(20, 68, 128, 0.30);
+    --borda-card: #1875e9;
+    --fundo-button-active: #1875e9;
 }
 
 * {
@@ -59,8 +65,6 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     padding: 4rem 0;
 }
-
-
 
 
 .app__image {
@@ -100,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .app__card {
     border-radius: 3.2rem;
-    border: 0.2rem solid var(--azul-royal);
+    border: 0.2rem solid var(--borda-card);
     background: var(--fundo-card-timer);
     padding: 2.4rem;
     margin: 8rem 0;
@@ -134,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .app__card-button.active {
     border-radius: 0.8rem;
-    background: var(--azul-royal);
+    background: var(--fundo-button-active);
     font-weight: 600;
 }
 
