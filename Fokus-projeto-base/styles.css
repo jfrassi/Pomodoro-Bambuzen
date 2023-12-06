@@ -25,7 +25,7 @@
 }
 
 [data-contexto="floresta"] {
-    --main-bg-color: linear-gradient(180deg, #0F725C 0%, #08352b 48.44%, #01080E 100%);
+    --main-bg-color: linear-gradient(180deg, #0F725C 0%, #051d18 48.44%, #01080E 100%);
     --fundo-card-timer: rgba(20, 128, 61, 0.3);
     --borda-card: #0F725C;
     --fundo-button-active:#0F725C;
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .app__title {
     line-height: 150%;
-    font-size: 5.2rem;
+    font-size: 5rem;
     font-style: normal;
     color: var(--color-secondary);
     font-weight: 200;
@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .app__title-strong {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .app__section-card-container {
