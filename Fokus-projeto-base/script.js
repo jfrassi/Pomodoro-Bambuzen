@@ -59,22 +59,22 @@ function alterarContexto (contexto) {
     html.setAttribute('data-contexto', contexto)
     banner.setAttribute('src', `imagens/${contexto}.png`)
     switch (contexto) {
-        case "foco":
+        case "lenha":
 
             titulo.innerHTML = ` 
-                Otimize sua produtividade,<br>
-                <strong class="app__title-strong">mergulhe no que importa.</strong>
+                O fogo dança, <br> a mente foca,<br>
+                <strong class="app__title-strong">Estude com a energia das chamas.</strong>
             `
             break;
 
-        case "descanso-curto":
+        case "floresta":
             titulo.innerHTML = ` 
                 Que tal dar uma respirada? 
                 <strong class="app__title-strong">dê uma pausa curta.</strong> 
             `
             break;
 
-        case "descanso-longo":
+        case "chuva":
             titulo.innerHTML =  `
                 Hora de voltar à superficie, <br>
                 <strong class="app__title-strong">dê uma pausa longa.</strong>
